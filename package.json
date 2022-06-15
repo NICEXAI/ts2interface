@@ -1,11 +1,12 @@
 {
   "name": "ts2interface",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Convert arbitrary formats to Typescript Interface(including json, toml, yaml, etc.)",
   "main": "./dist/index.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/app.ts",
     "build": "rm -rf dist && tsc",
+    "publish": "npm run build && npm publish",
     "lint": "eslint \"src/**/*.ts\" --fix",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest"
