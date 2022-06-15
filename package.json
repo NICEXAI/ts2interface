@@ -1,0 +1,50 @@
+{
+  "name": "ts2interface",
+  "version": "1.0.2",
+  "description": "Convert arbitrary formats to Typescript Interface(including json, toml, yaml, etc.)",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/app.ts",
+    "build": "rm -rf dist && tsc",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NICEXAI/ts2interface.git"
+  },
+  "keywords": [
+    "ts",
+    "interface",
+    "json",
+    "yml"
+  ],
+  "author": "afeyer",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "Apache",
+  "dependencies": {
+    "commander": "^9.3.0",
+    "yaml": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@types/node": "^17.0.42",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.7.0",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}
