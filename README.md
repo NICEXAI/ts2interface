@@ -37,7 +37,7 @@ console.log(result)
 
 print:
 
-```json
+```ts
 interface Example {
     name: string
     age: number
@@ -68,7 +68,7 @@ console.log(result)
 
 print:
 
-```json
+```ts
 interface Example {
     name: string
     age: number
@@ -97,7 +97,7 @@ console.log(result)
 
 print:
 
-```json
+```ts
 interface Example {
     name: string
     age: number
