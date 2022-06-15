@@ -1,14 +1,14 @@
 import { object2interface } from "../src/object"
 
 test("Test object2interface method", () => {
-    const jsonStr = {
+    const obj = {
         name: "nice",
         age: 12,
     }
 
-    const result = object2interface(jsonStr, {
+    const result = object2interface(obj, {
         indent: 4,
-        rootName: "Config",
+        rootName: "Example",
         semi: false,
         useTab: true,
     })

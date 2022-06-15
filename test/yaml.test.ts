@@ -8,7 +8,7 @@ age: 12
 
     const result = yaml2interface(yamlStr, {
         indent: 4,
-        rootName: "Config",
+        rootName: "Example",
         semi: false,
         useTab: true,
     })
