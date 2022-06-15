@@ -32,7 +32,7 @@ export function object2interface(
     const prefix = getPrefix(config.rootName, isRoot)
     const [content, subContent] = transformObject(obj, config)
     const suffix = "}"
-    return `${subContent}${prefix}${content}${suffix}\n\n`
+    return `${subContent}${prefix}${content}${suffix}${isRoot ? "\n" : "\n\n"}`
 }
 
 function transformObject(obj: TransformObject, config: Config) {

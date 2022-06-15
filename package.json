@@ -1,6 +1,6 @@
 {
   "name": "ts2interface",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "Convert arbitrary formats to Typescript Interface(including json, toml, yaml, etc.)",
   "main": "./dist/index.js",
   "scripts": {
